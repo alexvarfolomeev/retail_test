@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-exception: true
+    include-stacktrace: always
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+  datasource:
+    url: jdbc:mysql://localhost:3610/retail_test
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  sql:
+    init:
+      mode: always
+springdoc:
+  swagger-ui:
+    use-root-path: true
